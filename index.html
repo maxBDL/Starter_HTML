@@ -8,7 +8,28 @@
     <link type="text/css" href="css/reset.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<script>
+    function toggleMenu(){
+        document.getElementsByClassName("toggle")[0].classList.toggle("toggleStyle");
+        console.log("ok");
+    }
+</script>
 
+<body>
+<nav class="barrnav">
+    <img class="hamb" src="img/hamburger.png" alt="hamb" onclick="toggleMenu()">
+    <ul class="link_menu toggle">
+        <li><a class="tit" href="#">Accueil</a></li>
+        <li><a class="tit" href="cerise.html">Cerise</a></li>
+        <li><a class="tit" href="poire.html">Poire</a></li>
+        <li><a class="tit" href="pomme.html">Pomme</a></li>
+        <li><a class="tit" href="tomate.html">Tomate</a></li>
+    </ul>
+</nav>
+
+<h1>Accueil</h1>*
+<div class="image_fond">
+    <img src="img/accueil.jpg">
+</div>
 </body>
 </html>
